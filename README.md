@@ -1,4 +1,4 @@
-# Portfólio · Matheus Ávila
+# Portfólio | Matheus Ávila
 
 - Link do portifólio: https://matheusavila-dev.github.io/Portifolio-Web-Matheus/
 
