@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgBAMAAAAQtmoLAAAAGFBMVEX+/v7+/f2lhsNtGMEgCDYBAAIAAAEAAADa8ouzAAADoElEQVR42u1XsXIbNxB92DgtgVPcZQRCoNOqIK0PiD3+AVH/kp8SM+k5ktzTzGTYRjqCx1YjAKw9QArgeOTxZEtFGg/ZcIaHd7v79r1dkP2B130IR8ARcAT8SIA3XT8Gk16mXgog/boIIf4DAPhJqBdGgE3PxEuLjjlS//spBQJQfc24yL4XIVQAANdBWTegkubglZV8HmDkJLRLMbOqfA5Qyi9GARB1SpUBEOa67AaUen4nAIRe/YsDAHY/0aYLEPTstnA7rNaJFQ9/7pRGDUH//l24zq7w+78aBG3Pn956t9e3Lb2ePyxkG1CdXnvOEcmAtm8L6Vj0veki7ANKOVlxADAKBgCYSKGCSogtuZQJ+rLkzjkImHajPRgie6rJpUzQXeEEwH1ol2w4i4AtanKpJsjCofADqBwhp0QYxgKAFZlcygRFAMwOLnWulNWt1r8NrQDg+MNCGoASQdEBjP8yNltWVc1rOTrzAmC+N11IgBBOJysuAPDN+1IdKkBX474HeGS9WWVAMPOlcB4o/Kfzxvyi8Y5aX3EGB+ufbgIItBQWEYV9d16hJSUnAECuP/ACQCye1NaizL67NAoANo87TegBAElyt8IBrmhy5SejXIBzTUo5GJWjM59JyAC2uZDfmF7ajPtij42DCSSrvXIILPeGAKAQtjet1cVd6psAgCpr8/TauAQngME65sNN0krg+1JKWpuvRE6EgMgAHovHbMSUhgmNhUI1uxOWpelACNoK4Vgs7htbgWndlFX9mszLrDZ4A6WXhkNYxqci6BwhztO3E0DZv/YRhWWcRgCBynHfFxbR9250bdBobcpGIejJigMWfHMRFAjQ6yuerPs4kWjNyoBqtuQOW60RALke2qSVh4XZN2hEeVoXMDivch9IXvxuBQMsnx5YlK69FQCLb8eVqhtH5fszzwH4SO0IynMAjJ98TFqjXZMAULI17A0HPPhWa1lLcj3kBRhY2B+sKV4s/CCbpQaQ/HloReyUKgOzg8tK7e84kip+Fr4bwWlc6vZSpHK0XNVSYmcAnlxqdeSbT9vzu9NhfcVFlieU1ie5cWB702FnA8n1hygoseqsTcs9qrpjh3uaJLnPOWtB8HnVxbdjo7qXIpUjlQ7RBlD5FH0s1XNrV1dj52r6Q74NtKYDtawvm5mQZt9KVt+4a5A86J2D+h/ufEyIbUoHz177x699I4tLAEi8lF03xTaA7XCoj3fvI+AI+PEB/wExHJvWxCp0yQAAAABJRU5ErkJggg==">
+<title>Matheus Ávila · Desenvolvedor Full Stack</title>
+<meta name="description" content="Portfólio de Matheus Ávila, desenvolvedor Full Stack.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#fff;--bg2:#f7f3fb;--card:#fff;--fg:#14091f;--mut:#5f5470;--line:#e7dff1;--pur:#6b1fad;--acc:#6b1fad;--soft:rgba(107,31,173,.09);--chip:#f1e9fa;--hdr:rgba(255,255,255,.85);--sh:0 10px 30px rgba(60,20,100,.08);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#09060f;--bg2:#0f0a18;--card:#140d20;--fg:#f4effa;--mut:#a698b8;--line:#261a37;--acc:#b27be6;--soft:rgba(178,123,230,.12);--hdr:rgba(9,6,15,.85);--sh:0 10px 30px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#09060f;--bg2:#0f0a18;--card:#140d20;--fg:#f4effa;--mut:#a698b8;--line:#261a37;--acc:#b27be6;--soft:rgba(178,123,230,.12);--hdr:rgba(9,6,15,.85);--sh:0 10px 30px rgba(0,0,0,.45);color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hdr);backdrop-filter:blur(12px);z-index:30}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--hdr);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hb{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--fg);text-decoration:none}
+.logo img{height:38px;width:38px;border-radius:10px}
+.mono{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:var(--pur);color:#fff;font-weight:800}
+nav{display:flex;gap:4px}
+nav a{padding:8px 14px;border-radius:999px;color:var(--mut);text-decoration:none;font-size:.95rem;transition:.2s}
+nav a:hover,nav a[aria-current]{color:var(--fg);background:var(--soft)}
+.tools{display:flex;gap:8px}
+.ic{display:inline-flex;align-items:center;justify-content:center;gap:3px;height:38px;min-width:38px;padding:0 10px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font:600 .8rem Inter,sans-serif;cursor:pointer;transition:.2s}
+.ic:hover{border-color:var(--pur)}
+.ic svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.on{color:var(--acc)}
+.sun{display:none}:root[data-theme="dark"] .sun{display:block}:root[data-theme="dark"] .moon{display:none}
+.burger{display:none}
+section{padding:clamp(64px,10vw,110px) 0}
+.alt{background:var(--bg2)}
+h1,h2,h3{line-height:1.15;margin:0}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.02em}
+.eyebrow{color:var(--acc);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+.sub{color:var(--mut);max-width:60ch;margin:12px 0 0}
+.head{margin-bottom:44px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:12px;border:1px solid var(--pur);background:var(--pur);color:#fff;font:600 .95rem Inter,sans-serif;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(107,31,173,.35)}
+.btn.o{background:transparent;color:var(--acc)}.btn.o:hover{background:var(--soft);box-shadow:none}
+.hero{min-height:calc(100svh - 68px);display:grid;align-items:center;position:relative;overflow:hidden;padding:40px 0}
+.hero::before{content:"";position:absolute;width:520px;height:520px;right:-120px;top:-80px;background:radial-gradient(circle,rgba(107,31,173,.28),transparent 65%);pointer-events:none}
+.hg,.ab,.cg,.fg{display:grid;gap:48px;align-items:center}
+.hg{grid-template-columns:1.1fr .9fr;position:relative}
+h1{font-size:clamp(2.4rem,7vw,4.6rem);letter-spacing:-.03em;margin:10px 0}
+h1 em{font-style:normal;color:var(--fg)}
+.role{font-size:clamp(1.1rem,2.4vw,1.4rem);color:var(--mut);margin:0}
+.lead{max-width:52ch;color:var(--mut);margin:18px 0 30px}
+.cta,.btns{display:flex;flex-wrap:wrap;gap:12px}
+.code{background:#0d0814;color:#e8def5;border:1px solid #2a1c3d;border-radius:16px;padding:22px;font:.88rem/1.8 ui-monospace,Menlo,Consolas,monospace;box-shadow:0 20px 50px rgba(107,31,173,.28);animation:fl 7s ease-in-out infinite}
+.code code{display:block;white-space:pre;overflow-x:auto}.code i{font-style:normal;color:#b27be6}.code s{text-decoration:none;color:#8f8aa3}
+.dots{display:flex;gap:6px;margin-bottom:14px}.dots b{width:10px;height:10px;border-radius:50%;background:#3a2a52}
+@keyframes fl{50%{transform:translateY(-8px)}}
+.ab{grid-template-columns:.8fr 1.2fr;gap:64px}
+.pw{position:relative}.pw::before{content:"";position:absolute;inset:16px -16px -16px 16px;border:2px solid var(--pur);border-radius:20px;opacity:.5}
+.photo{position:relative;aspect-ratio:4/5;border-radius:20px;border:1px solid var(--line);background:var(--card);overflow:hidden;display:grid;place-items:center;color:var(--mut);text-align:center;box-shadow:var(--sh)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo svg{width:56px;height:56px;stroke:var(--pur);fill:none;stroke-width:1.5}
+.ab p{color:var(--mut);margin:16px 0 0}.ab .btn{margin-top:28px}
+.nx{color:var(--fg);font-weight:700;text-decoration:none;border-bottom:2px solid var(--pur)}
+.p{color:#6b1fad;font-weight:800}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.rv>.card{height:100%}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--sh);transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-4px);border-color:var(--pur)}
+.num{color:var(--acc);font-weight:700;font-size:.85rem;letter-spacing:.1em}
+.card h3{font-size:1.25rem;margin:8px 0}
+.card p{color:var(--mut);margin:0 0 16px;font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{padding:5px 12px;border-radius:999px;background:var(--soft);border:1px solid var(--line);font-size:.82rem}
+.chips .mu{color:var(--mut);border-style:dashed}
+.thumb{aspect-ratio:16/10;border-radius:12px;background:linear-gradient(135deg,var(--soft),transparent);border:1px dashed var(--line);display:grid;place-items:center;color:var(--mut);font-size:.85rem;margin-bottom:18px;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.lnk{display:inline-block;margin-top:16px;color:var(--acc);font-weight:600;text-decoration:none}
+.ctr{text-align:center;margin-top:40px}
+.cg{grid-template-columns:1.2fr .9fr;align-items:start;gap:28px}
+label{display:block;font-size:.85rem;font-weight:600;margin:0 0 6px}
+input,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);font:inherit;margin-bottom:16px;transition:border-color .2s,box-shadow .2s}
+input:focus,textarea:focus{outline:none;border-color:var(--pur);box-shadow:0 0 0 3px var(--soft)}
+textarea{min-height:130px;resize:vertical}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.info a{display:flex;align-items:center;gap:14px;padding:12px 0;color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}
+.info small{display:block;color:var(--mut)}
+.si{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--chip);flex:none}
+.si svg{width:20px;height:20px;stroke:#6b1fad;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+footer{background:var(--bg2);border-top:1px solid var(--line);padding:56px 0 28px}
+.fg{grid-template-columns:1.4fr 1fr 1fr;align-items:start;gap:36px}
+footer h4{margin:0 0 12px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+footer a:not(.logo){color:var(--fg);text-decoration:none;display:block;padding:3px 0}footer a:hover{color:var(--acc)}
+.mu2{color:var(--mut);margin:12px 0 6px}
+.fb{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-top:36px;padding-top:20px;border-top:1px solid var(--line);color:var(--mut);font-size:.88rem}
+.sk{display:flex;flex-wrap:wrap;justify-content:center}
+.sk>.rv{flex:0 0 calc((100% - 40px)/3)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.btn svg{width:16px;height:16px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ctr .gh{min-width:0;padding:9px 18px;font-size:.85rem;justify-content:center}
+@media(max-width:1000px){.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.sk>.rv{flex-basis:calc((100% - 20px)/2)}}
+@media(max-width:620px){.sk>.rv{flex-basis:100%}.g4{grid-template-columns:1fr}}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}
+.pg{animation:pg .5s ease}@keyframes pg{from{opacity:0;transform:translateY(10px)}}
+@media(max-width:860px){.hg,.ab,.cg,.fg{grid-template-columns:1fr}.hero{min-height:auto}.pw{max-width:360px;margin:0 auto 16px}.burger{display:inline-flex}nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 20px 16px;display:none}nav.open{display:flex}}
+@media(max-width:520px){.r2{grid-template-columns:1fr}.ln{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="hdr"></header>
+<main id="app"></main>
+<footer id="ftr"></footer>
+<script>
+"use strict";
+/* ============ MODEL: dados, textos e estado ============ */
+const Model = {
+  cfg: { logo: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgBAMAAAAQtmoLAAAAGFBMVEX+/v7+/f2lhsNtGMEgCDYBAAIAAAEAAADa8ouzAAADoElEQVR42u1XsXIbNxB92DgtgVPcZQRCoNOqIK0PiD3+AVH/kp8SM+k5ktzTzGTYRjqCx1YjAKw9QArgeOTxZEtFGg/ZcIaHd7v79r1dkP2B130IR8ARcAT8SIA3XT8Gk16mXgog/boIIf4DAPhJqBdGgE3PxEuLjjlS//spBQJQfc24yL4XIVQAANdBWTegkubglZV8HmDkJLRLMbOqfA5Qyi9GARB1SpUBEOa67AaUen4nAIRe/YsDAHY/0aYLEPTstnA7rNaJFQ9/7pRGDUH//l24zq7w+78aBG3Pn956t9e3Lb2ePyxkG1CdXnvOEcmAtm8L6Vj0veki7ANKOVlxADAKBgCYSKGCSogtuZQJ+rLkzjkImHajPRgie6rJpUzQXeEEwH1ol2w4i4AtanKpJsjCofADqBwhp0QYxgKAFZlcygRFAMwOLnWulNWt1r8NrQDg+MNCGoASQdEBjP8yNltWVc1rOTrzAmC+N11IgBBOJysuAPDN+1IdKkBX474HeGS9WWVAMPOlcB4o/Kfzxvyi8Y5aX3EGB+ufbgIItBQWEYV9d16hJSUnAECuP/ACQCye1NaizL67NAoANo87TegBAElyt8IBrmhy5SejXIBzTUo5GJWjM59JyAC2uZDfmF7ajPtij42DCSSrvXIILPeGAKAQtjet1cVd6psAgCpr8/TauAQngME65sNN0krg+1JKWpuvRE6EgMgAHovHbMSUhgmNhUI1uxOWpelACNoK4Vgs7htbgWndlFX9mszLrDZ4A6WXhkNYxqci6BwhztO3E0DZv/YRhWWcRgCBynHfFxbR9250bdBobcpGIejJigMWfHMRFAjQ6yuerPs4kWjNyoBqtuQOW60RALke2qSVh4XZN2hEeVoXMDivch9IXvxuBQMsnx5YlK69FQCLb8eVqhtH5fszzwH4SO0IynMAjJ98TFqjXZMAULI17A0HPPhWa1lLcj3kBRhY2B+sKV4s/CCbpQaQ/HloReyUKgOzg8tK7e84kip+Fr4bwWlc6vZSpHK0XNVSYmcAnlxqdeSbT9vzu9NhfcVFlieU1ie5cWB702FnA8n1hygoseqsTcs9qrpjh3uaJLnPOWtB8HnVxbdjo7qXIpUjlQ7RBlD5FH0s1XNrV1dj52r6Q74NtKYDtawvm5mQZt9KVt+4a5A86J2D+h/ufEyIbUoHz177x699I4tLAEi8lF03xTaA7XCoj3fvI+AI+PEB/wExHJvWxCp0yQAAAABJRU5ErkJggg==", photo: "", name: "Matheus Ávila",
+    github: "https://github.com/matheusavila-dev", linkedin: "https://www.linkedin.com/",
+    instagram: "https://instagram.com/matheusavila.dev", nex: "https://nex7step.up.railway.app",
+    email: "matheusdeaviladev@gmail.com", phone: "(34) 98838-7442", wa: "5534988387442" },
+  state: { lang: "pt", theme: "light" },
+  text: {
+    pt: { nav: ["Início","Sobre","Habilidades","Projetos","Contato"], eyebrow: "Olá, eu sou", role: "Desenvolvedor Full Stack",
+      lead: "Transformando ideias em aplicações sólidas, do front-end ao banco de dados.",
+      c1: "Ver projetos", c2: "Vamos conversar", aboutT: "Sobre mim", photoPh: "Sua foto aqui",
+      a1: "Me chamo Matheus Borges Ávila, sou estudante de programação, com experiência em programação Front-end e Back-end. Sou técnico em Sistemas para a Internet e Desenvolvedor Full Stack, atualmente estou me formando em técnico de Desenvolvimento de Sistemas. Além de estudante também sou empreendedor, sendo fundador da {nex}, além de criar e participar ativamente de outros projetos pessoais.",
+      a2: "Atualmente busco melhorar minhas competências por meio dos estudos e aperfeiçoá-las por meio de projetos e desafios, de forma que cada um contribua para o meu desenvolvimento e constante evolução na área de programação.",
+      more: "Mostrar outros projetos", otherP: "Ver outros projetos", skT: "Habilidades", skS: "As tecnologias e áreas em que atuo.", soon: "Em breve",
+      prT: "Projetos", prS: "Meus principais trabalhos.", pTitle: "Título do projeto", pDesc: "Breve descrição do projeto.", pTech: "Tecnologias usadas", pView: "Ver projeto →", imgPh: "Imagem do projeto", gh: "Ver meu GitHub",
+      moT: "Outros projetos", moS: "Mais trabalhos e experimentos.", back: "← Voltar ao portfólio",
+      ctT: "Contato", ctS: "Fale comigo pelo formulário ou pelos canais ao lado.", fName: "Nome", fPhone: "Número", fMail: "E-mail", fMsg: "Mensagem", sMail: "Enviar por e-mail", sWa: "Enviar pelo WhatsApp", subj: "Contato pelo portfólio", tel: "Telefone",
+      fTag: "Desenvolvedor Full Stack. Interfaces, sistemas e automações.", follow: "Siga @matheusavila.dev", fNav: "Navegue", fCt: "Contato", rights: "Todos os direitos reservados.", top: "Voltar ao topo ↑", aLang: "Mudar idioma", aTheme: "Mudar tema", aMenu: "Abrir menu" },
+    en: { nav: ["Home","About","Skills","Projects","Contact"], eyebrow: "Hi, I’m", role: "Full Stack Developer",
+      lead: "Turning ideas into solid applications, from the front end to the database.",
+      c1: "View projects", c2: "Let’s talk", aboutT: "About me", photoPh: "Your photo here",
+      a1: "My name is Matheus Borges Ávila. I’m a programming student with experience in front-end and back-end development. I’m a Web Systems technician and a Full Stack Developer, currently finishing my technical degree in Systems Development. Besides studying, I’m also an entrepreneur and the founder of {nex}, and I create and actively take part in other personal projects.",
+      a2: "I’m currently working to improve my skills through study and to sharpen them through projects and challenges, so that each one contributes to my growth and constant evolution in programming.",
+      more: "Show more projects", otherP: "See my other projects", skT: "Skills", skS: "The technologies and areas I work with.", soon: "Coming soon",
+      prT: "Projects", prS: "My main works.", pTitle: "Project title", pDesc: "Short project description.", pTech: "Technologies used", pView: "View project →", imgPh: "Project image", gh: "View my GitHub",
+      moT: "More projects", moS: "More work and experiments.", back: "← Back to portfolio",
+      ctT: "Contact", ctS: "Reach me through the form or the channels beside it.", fName: "Name", fPhone: "Phone", fMail: "Email", fMsg: "Message", sMail: "Send by email", sWa: "Send on WhatsApp", subj: "Contact from portfolio", tel: "Phone",
+      fTag: "Full Stack Developer. Interfaces, systems and automations.", follow: "Follow @matheusavila.dev", fNav: "Navigate", fCt: "Contact", rights: "All rights reserved.", top: "Back to top ↑", aLang: "Change language", aTheme: "Change theme", aMenu: "Open menu" }
+  },
+  /* Para adicionar uma tecnologia, inclua um objeto nesta lista */
+  skills: [
+    { t: { pt: "Front-end", en: "Front-end" }, s: { pt: "Interfaces estilizadas, responsivas e de acordo com os padrões estabelecidos pela W3C com foco na experiência do usuário.", en: "Styled, responsive interfaces that follow W3C standards, focused on user experience." }, items: ["React","Tailwind","Bootstrap"] },
+    { t: { pt: "Back-end", en: "Back-end" }, s: { pt: "Sistemas que completam o Front-end, APIs e integrações com Banco de Dados.", en: "Systems that complete the front end: APIs and database integrations." }, items: ["Node.js","mysql2","Express","Cors","Regex"] },
+    { t: { pt: "Redes e Hardware", en: "Networks and Hardware" }, s: { pt: "Instalação e manutenção de redes e dispositivos de hardware.", en: "Installation and maintenance of networks and hardware devices." }, items: [] },
+    { t: { pt: "Inteligência Artificial", en: "Artificial Intelligence" }, s: { pt: "Uso especialista da ferramenta, integração com sistemas e automações.", en: "Expert use of the tool, system integrations and automations." }, items: { pt: ["Engenharia de Prompts","LLM Integrations","Automação"], en: ["Prompt Engineering","LLM Integrations","Automation"] } },
+    { t: { pt: "Outras Competências", en: "Other Skills" }, s: null, items: { pt: ["NFC","Inglês Técnico e Profissional","Pacote Office","Liderança","Trabalho em Equipe"], en: ["NFC","Technical and Professional English","Office Suite","Leadership","Teamwork"] } }
+  ],
+  /* Projetos: preencha img, title, desc, tech e url */
+  projects: Array.from({ length: 4 }, () => ({ img: "", title: "", desc: "", tech: [], url: "" })),
+  more: Array.from({ length: 6 }, () => ({ img: "", title: "", desc: "", tech: [], url: "" }))
+};
+
+/* ============ VIEW: geração de HTML ============ */
+const V = {
+  P: { ig: '<rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><path d="M17.5 6.5h.01"/>',
+    li: '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>',
+    gh: '<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.1-1.3-.3-2.5-1-3.5.3-1.2.3-2.4 0-3.5 0 0-1 0-3 1.5a13 13 0 0 0-8 0C6 2 5 2 5 2c-.3 1.1-.3 2.300 0 3.500A5.400 5.400 0 0 0 4 9c0 3.500 3 5.500 6 5.500-.4.500-.7 1-.8 1.600-.2.600-.2 1.200-.2 1.900v4"/><path d="M9 18c-4.500 2-5-2-7-2"/>',
+    tel: '<path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',
+    ml: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
+    sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2 12h2M20 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/>',
+    moon: '<path d="M21 12.800A9 9 0 1 1 11.200 3a7 7 0 0 0 9.800 9.800z"/>', menu: '<path d="M4 7h16M4 12h16M4 17h16"/>', user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>', pr: '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>' },
+  svg(k, c = "") { return `<svg class="${c}" viewBox="0 0 24 24" aria-hidden="true">${this.P[k]}</svg>`; },
+  rv(h, d = 0) { return `<div class="rv" style="--d:${d}s">${h}</div>`; },
+  logo() { const c = Model.cfg; return c.logo ? `<img src="${c.logo}" alt=""><span class="ln">${c.name}</span>` : `<span class="mono">MA</span><span class="ln">${c.name}</span>`; },
+  ids: ["inicio","sobre","habilidades","projetos","contato"],
+  navLinks(t) { return this.ids.map((id, i) => `<a href="#${id}">${t.nav[i]}</a>`).join(""); },
+  header(t, s) {
+    return `<div class="wrap hb"><a class="logo" href="#inicio">${this.logo()}</a><nav id="nav" aria-label="${s.lang === "pt" ? "Principal" : "Main"}">${this.navLinks(t)}</nav>
+    <div class="tools"><button class="ic" data-act="lang" aria-label="${t.aLang}"><span class="${s.lang === "pt" ? "on" : ""}">PT</span>/<span class="${s.lang === "en" ? "on" : ""}">EN</span></button>
+    <button class="ic" data-act="theme" aria-label="${t.aTheme}">${this.svg("moon", "moon")}${this.svg("sun", "sun")}</button>
+    <button class="ic burger" data-act="menu" aria-label="${t.aMenu}" aria-expanded="false" aria-controls="nav">${this.svg("menu")}</button></div></div>`;
+  },
+  card(p, t, i) {
+    return this.rv(`<article class="card"><div class="thumb">${p.img ? `<img src="${p.img}" alt="">` : t.imgPh}</div><h3>${p.title || t.pTitle}</h3><p>${p.desc || t.pDesc}</p>
+    <ul class="chips">${p.tech.length ? p.tech.map(x => `<li>${x}</li>`).join("") : `<li class="mu">${t.pTech}</li>`}</ul>
+    <a class="lnk" href="${p.url || "#projetos"}"${p.url ? ' target="_blank" rel="noopener"' : ""}>${t.pView}</a></article>`, (i % 3) * .1);
+  },
+  home(t, s) {
+    const c = Model.cfg, nex = `<a class="nx" href="${c.nex}" target="_blank" rel="noopener">nex<span class="p">7</span>step</a>`;
+    const skills = Model.skills.map((k, i) => {
+      const it = Array.isArray(k.items) ? k.items : k.items[s.lang];
+      return this.rv(`<article class="card"><span class="num">0${i + 1}</span><h3>${k.t[s.lang]}</h3>${k.s ? `<p>${k.s[s.lang]}</p>` : ""}${it.length ? `<ul class="chips">${it.map(x => `<li>${x}</li>`).join("")}</ul>` : ""}</article>`, (i % 3) * .1);
+    }).join("");
+    const info = [["tel", `tel:+${c.wa}`, t.tel, c.phone], ["ml", `mailto:${c.email}`, t.fMail, c.email], ["ig", c.instagram, "Instagram", "@matheusavila.dev"], ["li", c.linkedin, "LinkedIn", "Matheus Ávila"], ["gh", c.github, "GitHub", "matheusavila-dev"], ["pr", "#outros-projetos", t.prT, t.otherP]]
+      .map(([k, h, l, v]) => `<a href="${h}"${h.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}><span class="si">${this.svg(k)}</span><span><small>${l}</small>${v}</span></a>`).join("");
+    return `<section id="inicio" class="hero" data-sec><div class="wrap hg">
+      ${this.rv(`<span class="eyebrow">${t.eyebrow}</span><h1>Matheus <em>Ávila</em></h1><p class="role">${t.role}</p><p class="lead">${t.lead}</p><div class="cta"><a class="btn" href="#projetos">${t.c1}</a><a class="btn o" href="#contato">${t.c2}</a></div>`)}
+      ${this.rv(`<div class="code" aria-hidden="true"><div class="dots"><b></b><b></b><b></b></div><code><s>// matheus.js</s>
+<i>const</i> dev = {
+  name: "Matheus Ávila",
+  role: "Full Stack",
+  stack: ["React", "Node.js"],
+  focus: "UX + APIs",
+};</code></div>`, .15)}</div></section>
+    <section id="sobre" class="alt" data-sec><div class="wrap ab">
+      ${this.rv(`<div class="pw"><div class="photo">${c.photo ? `<img src="${c.photo}" alt="${c.name}">` : `<div>${this.svg("user")}<p>${t.photoPh}</p></div>`}</div></div>`)}
+      ${this.rv(`<h2>${t.aboutT}</h2><p>${t.a1.replace("{nex}", nex)}</p><p>${t.a2}</p><a class="btn" href="#outros-projetos">${t.more}</a>`, .12)}</div></section>
+    <section id="habilidades" data-sec><div class="wrap">${this.rv(`<div class="head"><h2>${t.skT}</h2><p class="sub">${t.skS}</p></div>`)}<div class="grid sk">${skills}</div></div></section>
+    <section id="projetos" class="alt" data-sec><div class="wrap">${this.rv(`<div class="head"><h2>${t.prT}</h2><p class="sub">${t.prS}</p></div>`)}<div class="grid g4">${Model.projects.map((p, i) => this.card(p, t, i)).join("")}</div>
+      <div class="ctr rv"><a class="btn o gh" href="${c.github}" target="_blank" rel="noopener">${this.svg("gh")}${t.gh}</a></div></div></section>
+    <section id="contato" data-sec><div class="wrap">${this.rv(`<div class="head"><h2>${t.ctT}</h2><p class="sub">${t.ctS}</p></div>`)}<div class="cg">
+      ${this.rv(`<form id="cf" class="card"><div class="r2"><div><label for="n">${t.fName}</label><input id="n" name="name" autocomplete="name" required></div><div><label for="p">${t.fPhone}</label><input id="p" name="phone" type="tel" autocomplete="tel"></div></div>
+      <label for="e">${t.fMail}</label><input id="e" name="email" type="email" autocomplete="email"><label for="m">${t.fMsg}</label><textarea id="m" name="message" required></textarea>
+      <div class="btns"><button type="button" class="btn" data-act="mail">${t.sMail}</button><button type="button" class="btn o" data-act="wa">${t.sWa}</button></div></form>`)}
+      ${this.rv(`<div class="info">${info}</div>`, .12)}</div></div></section>`;
+  },
+  more(t) {
+    return `<section class="alt"><div class="wrap">${this.rv(`<div class="head"><h2>${t.moT}</h2><p class="sub">${t.moS}</p></div>`)}<div class="grid">${Model.more.map((p, i) => this.card(p, t, i)).join("")}</div>
+    <div class="ctr rv"><a class="btn o" href="#sobre">${t.back}</a></div></div></section>`;
+  },
+  footer(t) {
+    const c = Model.cfg;
+    return `<div class="wrap"><div class="fg"><div><a class="logo" href="#inicio">${this.logo()}</a><p class="mu2">${t.fTag}</p><a href="${c.instagram}" target="_blank" rel="noopener">${t.follow}</a></div>
+    <div><h4>${t.fNav}</h4>${this.navLinks(t)}</div><div><h4>${t.fCt}</h4><a href="https://wa.me/${c.wa}" target="_blank" rel="noopener">${c.phone}</a><a href="mailto:${c.email}">${c.email}</a></div></div>
+    <div class="fb"><span>© ${new Date().getFullYear()} ${c.name} · ${t.rights}</span><button class="btn o" data-act="top">${t.top}</button></div></div>`;
+  }
+};
+
+/* ============ CONTROLLER: eventos, rotas, tema e idioma ============ */
+const C = {
+  view: null,
+  $: (q) => document.querySelector(q),
+  init() {
+    const s = Model.state; let l = null, th = null;
+    try { l = localStorage.getItem("lang"); th = localStorage.getItem("theme"); } catch (e) {}
+    s.lang = l === "en" ? "en" : "pt";
+    s.theme = th || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    this.apply();
+    document.addEventListener("click", (e) => this.onClick(e));
+    addEventListener("hashchange", () => this.route());
+    this.route();
+  },
+  apply() {
+    const s = Model.state, d = document.documentElement;
+    d.dataset.theme = s.theme; d.lang = s.lang === "pt" ? "pt-BR" : "en";
+    try { localStorage.setItem("lang", s.lang); localStorage.setItem("theme", s.theme); } catch (e) {}
+  },
+  route() {
+    const h = location.hash.slice(1), v = h === "outros-projetos" ? "more" : "home", changed = v !== this.view;
+    this.view = v;
+    if (changed) this.render(true);
+    if (v === "more") scrollTo(0, 0);
+    else if (changed) { const el = h && document.getElementById(h); el ? el.scrollIntoView() : scrollTo(0, 0); }
+  },
+  render(animate) {
+    const s = Model.state, t = Model.text[s.lang], vals = [...document.querySelectorAll("#cf [name]")].map((i) => i.value);
+    this.$("#hdr").innerHTML = V.header(t, s);
+    this.$("#app").innerHTML = this.view === "more" ? V.more(t) : V.home(t, s);
+    this.$("#ftr").innerHTML = V.footer(t);
+    document.querySelectorAll("#cf [name]").forEach((i, k) => { if (vals[k]) i.value = vals[k]; });
+    if (animate) { const a = this.$("#app"); a.classList.remove("pg"); void a.offsetWidth; a.classList.add("pg"); }
+    this.observe();
+  },
+  observe() {
+    this.io && this.io.disconnect(); this.so && this.so.disconnect();
+    this.io = new IntersectionObserver((es) => es.forEach((e) => e.target.classList.toggle("in", e.isIntersecting)), { threshold: .12, rootMargin: "0px 0px -6% 0px" });
+    document.querySelectorAll(".rv").forEach((el) => this.io.observe(el));
+    this.so = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) document.querySelectorAll("#nav a").forEach((a) => a.toggleAttribute("aria-current", a.getAttribute("href") === "#" + e.target.id)); }), { rootMargin: "-45% 0px -50% 0px" });
+    document.querySelectorAll("[data-sec]").forEach((el) => this.so.observe(el));
+  },
+  onClick(e) {
+    if (e.target.closest("#nav a")) this.closeMenu();
+    const b = e.target.closest("[data-act]"); if (!b) return;
+    const a = b.dataset.act, s = Model.state;
+    if (a === "lang") { s.lang = s.lang === "pt" ? "en" : "pt"; this.apply(); this.render(); }
+    else if (a === "theme") { s.theme = s.theme === "dark" ? "light" : "dark"; this.apply(); }
+    else if (a === "menu") { const o = this.$("#nav").classList.toggle("open"); b.setAttribute("aria-expanded", o); }
+    else if (a === "top") scrollTo({ top: 0 });
+    else this.send(a);
+  },
+  closeMenu() { this.$("#nav").classList.remove("open"); const b = this.$(".burger"); b && b.setAttribute("aria-expanded", "false"); },
+  send(kind) {
+    const f = this.$("#cf"), c = Model.cfg, t = Model.text[Model.state.lang];
+    f.email.required = kind === "mail";
+    if (!f.reportValidity()) return;
+    const d = new FormData(f), body = `${t.fName}: ${d.get("name")}\n${t.fPhone}: ${d.get("phone")}\n${t.fMail}: ${d.get("email")}\n\n${d.get("message")}`;
+    if (kind === "mail") location.href = `mailto:${c.email}?subject=${encodeURIComponent(t.subj)}&body=${encodeURIComponent(body)}`;
+    else window.open(`https://wa.me/${c.wa}?text=${encodeURIComponent(body)}`, "_blank", "noopener");
+  }
+};
+C.init();
+</script>
+</body>
+</html>
