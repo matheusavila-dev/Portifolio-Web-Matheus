@@ -60,4 +60,4 @@ assets/
 
 ---
 
-Feito por Matheus Borges Ávila, fundador da [nex7step](https://nex7step.up.railway.app).
+Feito por Matheus Borges Ávila.
