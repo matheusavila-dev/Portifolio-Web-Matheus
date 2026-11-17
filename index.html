@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgBAMAAAAQtmoLAAAAGFBMVEX+/v7+/f2lhsNtGMEgCDYBAAIAAAEAAADa8ouzAAADoElEQVR42u1XsXIbNxB92DgtgVPcZQRCoNOqIK0PiD3+AVH/kp8SM+k5ktzTzGTYRjqCx1YjAKw9QArgeOTxZEtFGg/ZcIaHd7v79r1dkP2B130IR8ARcAT8SIA3XT8Gk16mXgog/boIIf4DAPhJqBdGgE3PxEuLjjlS//spBQJQfc24yL4XIVQAANdBWTegkubglZV8HmDkJLRLMbOqfA5Qyi9GARB1SpUBEOa67AaUen4nAIRe/YsDAHY/0aYLEPTstnA7rNaJFQ9/7pRGDUH//l24zq7w+78aBG3Pn956t9e3Lb2ePyxkG1CdXnvOEcmAtm8L6Vj0veki7ANKOVlxADAKBgCYSKGCSogtuZQJ+rLkzjkImHajPRgie6rJpUzQXeEEwH1ol2w4i4AtanKpJsjCofADqBwhp0QYxgKAFZlcygRFAMwOLnWulNWt1r8NrQDg+MNCGoASQdEBjP8yNltWVc1rOTrzAmC+N11IgBBOJysuAPDN+1IdKkBX474HeGS9WWVAMPOlcB4o/Kfzxvyi8Y5aX3EGB+ufbgIItBQWEYV9d16hJSUnAECuP/ACQCye1NaizL67NAoANo87TegBAElyt8IBrmhy5SejXIBzTUo5GJWjM59JyAC2uZDfmF7ajPtij42DCSSrvXIILPeGAKAQtjet1cVd6psAgCpr8/TauAQngME65sNN0krg+1JKWpuvRE6EgMgAHovHbMSUhgmNhUI1uxOWpelACNoK4Vgs7htbgWndlFX9mszLrDZ4A6WXhkNYxqci6BwhztO3E0DZv/YRhWWcRgCBynHfFxbR9250bdBobcpGIejJigMWfHMRFAjQ6yuerPs4kWjNyoBqtuQOW60RALke2qSVh4XZN2hEeVoXMDivch9IXvxuBQMsnx5YlK69FQCLb8eVqhtH5fszzwH4SO0IynMAjJ98TFqjXZMAULI17A0HPPhWa1lLcj3kBRhY2B+sKV4s/CCbpQaQ/HloReyUKgOzg8tK7e84kip+Fr4bwWlc6vZSpHK0XNVSYmcAnlxqdeSbT9vzu9NhfcVFlieU1ie5cWB702FnA8n1hygoseqsTcs9qrpjh3uaJLnPOWtB8HnVxbdjo7qXIpUjlQ7RBlD5FH0s1XNrV1dj52r6Q74NtKYDtawvm5mQZt9KVt+4a5A86J2D+h/ufEyIbUoHz177x699I4tLAEi8lF03xTaA7XCoj3fvI+AI+PEB/wExHJvWxCp0yQAAAABJRU5ErkJggg==">
-<title>Matheus Ávila | Desenvolvedor Full Stack</title>
+<title>Matheus Ávila · Desenvolvedor Full Stack</title>
 <meta name="description" content="Portfólio de Matheus Ávila, desenvolvedor Full Stack.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
 <style>
@@ -74,6 +74,8 @@ h1 em{font-style:normal;color:var(--fg)}
 .chips .mu{color:var(--mut);border-style:dashed}
 .thumb{aspect-ratio:16/10;border-radius:12px;background:linear-gradient(135deg,var(--soft),transparent);border:1px dashed var(--line);display:grid;place-items:center;color:var(--mut);font-size:.85rem;margin-bottom:18px;overflow:hidden}
 .thumb img{width:100%;height:100%;object-fit:cover}
+.thumb.has{position:relative;border-style:solid;background:#000}.thumb.has img{position:absolute;inset:0;object-fit:contain}
+.lnk.off{color:var(--mut);cursor:default}
 .lnk{display:inline-block;margin-top:16px;color:var(--acc);font-weight:600;text-decoration:none}
 .ctr{text-align:center;margin-top:40px}
 .cg{grid-template-columns:1.2fr .9fr;align-items:start;gap:28px}
@@ -151,7 +153,21 @@ const Model = {
     { t: { pt: "Outras Competências", en: "Other Skills" }, s: null, items: { pt: ["NFC","Inglês Técnico e Profissional","Pacote Office","Liderança","Trabalho em Equipe"], en: ["NFC","Technical and Professional English","Office Suite","Leadership","Teamwork"] } }
   ],
   /* Projetos: preencha img, title, desc, tech e url */
-  projects: Array.from({ length: 4 }, () => ({ img: "", title: "", desc: "", tech: [], url: "" })),
+  projects: [
+    { img: "img/study4life.png", bg: "#000", title: "Study 4Life",
+      desc: { pt: "Site institucional de uso livre e sem fins lucrativos.", en: "Free-to-use, non-profit institutional website." },
+      tech: ["HTML", "CSS", "SQL", "JS", "Python", "Node.js", "CORS", "Flask API", "Fetch API", "Gemini API"],
+      url: "https://matheusavila-dev.github.io/Study-4Life/" },
+    { img: "img/davillasfest.jpg", bg: "#0a0a0a", title: "D' Avillas Fest",
+      desc: { pt: "Site de divulgação do salão de festas.", en: "Promotional website for the party venue." },
+      tech: ["HTML", "CSS", "JS"],
+      url: "https://avillasfest.github.io/site/" },
+    { img: "", title: "Cardápio On-line",
+      desc: { pt: "Cardápio landing page + Sistema de delivery com administração.", en: "Menu landing page + delivery system with admin panel." },
+      tech: ["HTML", "CSS", "JS", "Node.js", "CORS", "Fetch API"],
+      url: "" /* coloque o link aqui quando tiver */ },
+    { img: "", title: "", desc: "", tech: [], url: "" } /* projeto 4: preencher depois */
+  ],
   more: Array.from({ length: 6 }, () => ({ img: "", title: "", desc: "", tech: [], url: "" }))
 };
 
@@ -176,9 +192,12 @@ const V = {
     <button class="ic burger" data-act="menu" aria-label="${t.aMenu}" aria-expanded="false" aria-controls="nav">${this.svg("menu")}</button></div></div>`;
   },
   card(p, t, i) {
-    return this.rv(`<article class="card"><div class="thumb">${p.img ? `<img src="${p.img}" alt="">` : t.imgPh}</div><h3>${p.title || t.pTitle}</h3><p>${p.desc || t.pDesc}</p>
+    const L = Model.state.lang, g = (v) => (v && typeof v === "object" ? v[L] : v) || "", title = g(p.title), desc = g(p.desc);
+    const link = p.url ? `<a class="lnk" href="${p.url}" target="_blank" rel="noopener">${t.pView}</a>`
+      : title ? `<span class="lnk off">${t.soon}</span>` : `<a class="lnk" href="#projetos">${t.pView}</a>`;
+    return this.rv(`<article class="card"><div class="thumb${p.img ? " has" : ""}"${p.img && p.bg ? ` style="background:${p.bg}"` : ""}>${p.img ? `<img src="${p.img}" alt="${title}" loading="lazy">` : t.imgPh}</div><h3>${title || t.pTitle}</h3><p>${desc || t.pDesc}</p>
     <ul class="chips">${p.tech.length ? p.tech.map(x => `<li>${x}</li>`).join("") : `<li class="mu">${t.pTech}</li>`}</ul>
-    <a class="lnk" href="${p.url || "#projetos"}"${p.url ? ' target="_blank" rel="noopener"' : ""}>${t.pView}</a></article>`, (i % 3) * .1);
+    ${link}</article>`, (i % 3) * .1);
   },
   home(t, s) {
     const c = Model.cfg, nex = `<a class="nx" href="${c.nex}" target="_blank" rel="noopener">nex<span class="p">7</span>step</a>`;
